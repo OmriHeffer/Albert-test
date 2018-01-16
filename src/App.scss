@@ -1,0 +1,69 @@
+@import './_globals.scss';
+
+.container {
+  width: $content-width;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+
+  .new-post {
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+    .main-content {
+      height: 100px;
+      display: flex;
+
+      .profile-pic {
+        img {
+          object-fit: cover;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+      }
+
+      .textbox {
+        flex: 1;
+        height: 100%;
+
+        textarea {
+          height: 100%;
+          outline: none;
+          resize: none;
+          width: 100%;
+          border: none;
+          padding: 15px;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    .button-section {
+      height: 30px;
+      box-sizing: border-box;
+      padding-top: 5px;
+      direction: rtl;
+      width: 100%;
+      border-top: 1px solid lightgray;
+      margin: 0 auto;
+
+      button {
+        margin-top: 5px;
+        background-color: #235279;
+        color: white;
+        border: none;
+        border-radius: 1px;
+        width: 60px;
+        height: 20px;
+      }
+    }
+  }
+}
